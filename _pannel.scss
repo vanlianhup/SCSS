@@ -1,0 +1,49 @@
+@mixin border-radius ($radius){
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius:$radius ;
+  border-radius:$radius;
+}
+
+.pannel {
+  border: 2px solid lightcyan;
+  background-color: lightblue;
+  margin: 10px;
+}
+
+.little-pannel{
+  @extend .pannel;
+  @include border-radius(10px);
+    font-size: 26px;
+  padding: 6px;
+}
+
+.big-pannel{
+  @extend .pannel;
+  @include border-radius(20px);
+  font-size: 36px;
+  padding: 12px;
+
+}
+
+.button {
+  background: $buttonBackground;
+  color: $buttonColor;
+  border-radius: 8px;
+  display: inline-block;
+  padding: $buttonPadding;
+  text-decoration: none;
+
+  &:hover{ background: $buttonBackground *0.5;  }
+}
+
+.jumbo-button {
+  @extend .button;
+  padding: $buttonPadding + 30;
+}
+
+.light-button{
+  @extend .button;
+  background: $buttonBackground *1.5;
+  &:hover{ background: $buttonBackground *0.5;  }
+}

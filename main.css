@@ -1,0 +1,71 @@
+html, body {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font: 100% Roboto, sans-serif; }
+
+p {
+  font-size: 16px; }
+
+.container {
+  padding: 0 20px; }
+
+.profile-img {
+  width: 400px; }
+
+nav ul {
+  background-color: #2c3e50;
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+  nav ul li {
+    display: inline-block; }
+    nav ul li a {
+      display: inline-block;
+      color: #ffffff;
+      padding: 10px 6px;
+      text-decoration: none; }
+    nav ul li a:hover {
+      background-color: #16a085; }
+
+.pannel, .little-pannel, .big-pannel {
+  border: 2px solid lightcyan;
+  background-color: lightblue;
+  margin: 10px; }
+
+.little-pannel {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px;
+  font-size: 26px;
+  padding: 6px; }
+
+.big-pannel {
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  border-radius: 20px;
+  font-size: 36px;
+  padding: 12px; }
+
+.button, .jumbo-button, .light-button {
+  background: #16a085;
+  color: white;
+  border-radius: 8px;
+  display: inline-block;
+  padding: 5px;
+  text-decoration: none; }
+  .button:hover, .jumbo-button:hover, .light-button:hover {
+    background: #0b5043; }
+
+.jumbo-button {
+  padding: 35px; }
+
+.light-button {
+  background: #21f0c8; }
+  .light-button:hover {
+    background: #0b5043; }
+
+/*# sourceMappingURL=main.css.map */
